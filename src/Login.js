@@ -14,10 +14,10 @@ export default function Login({ setToken }) {
     setAuthLoading(true);
     setAuthError("");
 
-    const response = await fetch("https://todobackend-bi77.onrender.com/login", {
+    const response = await fetch("https://backend-todo-ey6a.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ username :"abhi", password :"12345" }),
     });
 
     const data = await response.json();
