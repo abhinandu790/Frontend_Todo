@@ -17,7 +17,7 @@ export default function Login({ setToken }) {
     const response = await fetch("https://backend-todo-ey6a.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username :"abhi", password :"12345" }),
+      body: JSON.stringify({ username, password }),
     });
 
     const data = await response.json();
