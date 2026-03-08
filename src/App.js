@@ -101,9 +101,9 @@ function App() {
       <nav className="navbar">
         <ul className="navbar-list">
           <li>
-            <a href="#" className="nav-link">
-              Home
-            </a>
+            <span className="nav-link">
+  Home
+</span>
           </li>
         </ul>
         <button onClick={logout} className="logout-btn">
