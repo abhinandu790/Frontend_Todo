@@ -22,7 +22,7 @@ function Signup() {
     });
     const data = await response.json();
     setAuthLoading(false);
-    if (data.message === "User registered") {
+    if (data.message === "User has been registered") {
       setSuccess(true);
       setTimeout(() => navigate("/login"), 1500);
     } else {
